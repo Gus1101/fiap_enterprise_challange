@@ -5,3 +5,4 @@ poetry.lock
 .python-version
 .pytest_cache
 data/interrupcoes-energia-eletrica-2024.csv
+data/wheater_sp.parquet
