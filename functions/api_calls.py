@@ -5,14 +5,18 @@ import os
 import pandas as pd
 import pytest
 
-# Carregar as variáveis de ambiente
+# Variáveis de ambeinte
 caminho_env = 'c:/Users/Augusto/Desktop/FIAP/enterprise_challange/config/.env'
 load_dotenv(caminho_env)
 
 API_KEY = os.getenv('API_KEY')
 
-# Função para gerar todas as datas do ano até uma data específica
 def gerar_datas_ate(data_final):
+
+    """
+    Função para gerar uma lista com datas no ano de 2024
+    """
+
     datas = []
     data_atual = datetime(2024, 1, 1).date()
     while data_atual <= data_final:
@@ -20,8 +24,13 @@ def gerar_datas_ate(data_final):
         data_atual += timedelta(days=1)
     return datas
 
-# Função para realizar a requisição à API para uma data específica
+
 def requisitar_dados(data):
+
+    """
+    Função para realizar requisições em uma API
+    """
+    
     url = f'http://api.weatherapi.com/v1/history.json?key={API_KEY}&q=Sao Paulo&dt={data}'
     resposta = requests.get(url)
     if resposta.status_code == 200:
@@ -48,6 +57,6 @@ df = pd.json_normalize(resultados)
 caminho_parquet = 'c:/Users/Augusto/Desktop/FIAP/enterprise_challange/resultado.parquet'
 
 # Salvar o DataFrame como um arquivo .parquet
-df.to_parquet("C:/Users/Augusto/Desktop/FIAP/enterprise_challange/data/data/wheater_sp.parquet", engine='pyarrow')
+df.to_parquet("C:/Users/Augusto/Desktop/FIAP/enterprise_challange/data/wheater_sp.parquet", engine='pyarrow')
 
 print(f'DataFrame salvo em {"data/data"}')

@@ -4,4 +4,4 @@ config
 poetry.lock
 .python-version
 .pytest_cache
-data/
+data/interrupcoes-energia-eletrica-2024.csv
