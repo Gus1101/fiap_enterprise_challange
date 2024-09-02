@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "enterprise-challange"
+version = "0.1.0"
+description = ""
+authors = ["Gus1101 <augustosantosb60@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+sqlalchemy = "^2.0.32"
+faker = "^28.1.0"
+pandas = "^2.2.2"
+black = "^24.8.0"
+pytest = "^8.3.2"
+boto3 = "^1.35.10"
+taskipy = "^1.13.0"
+python-dotenv = "^1.0.1"
+pyarrow = "^17.0.0"
+pytest-mock = "^3.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+test = "poetry run python -m pytest"

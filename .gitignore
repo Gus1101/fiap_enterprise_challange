@@ -1,0 +1,7 @@
+.env
+.venv
+config
+poetry.lock
+.python-version
+.pytest_cache
+data/
