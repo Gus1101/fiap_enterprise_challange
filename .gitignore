@@ -8,3 +8,4 @@ data/interrupcoes-energia-eletrica-2024.parquet
 data/weather_sp.parquet
 data/siglas_nomes.csv
 data/interrupcoes_ocorrencias_sp.parquet
+data/ml_enhanced_df.parquet
