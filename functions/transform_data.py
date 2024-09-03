@@ -119,8 +119,8 @@ final_df = pd.concat([interrupcoes_ocorrencias_sp,df_synthetic])
 tipos = {
     'datiniciointerrupcao': 'datetime64[ns]',
     'dscsubestacaodistribuicao': 'str',  
-    'dsctipointerrupcao': 'str',  
-    'idemotivointerrupcao': 'str',    
+    'dsctipointerrupcao': 'int',  
+    'idemotivointerrupcao': 'float',    
     'numniveltensao':'float',
     'numunidadeconsumidora':'float',
     'numconsumidorconjunto':'float',

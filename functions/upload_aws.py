@@ -23,7 +23,7 @@ s3 = session.client('s3')
 
 # Especifique o bucket e o caminho do arquivo
 bucket_name = 'fiap.ec'
-file_path = 'data/ml_enhanced_df.parquet'
+file_path = 'data/complete_df.parquet'
 object_name = 'ml_enhanced_data.parquet'
 
 # Faça o upload

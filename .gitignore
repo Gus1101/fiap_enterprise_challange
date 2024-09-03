@@ -9,3 +9,8 @@ data/weather_sp.parquet
 data/siglas_nomes.csv
 data/interrupcoes_ocorrencias_sp.parquet
 data/ml_enhanced_df.parquet
+data/coordenates.csv
+data/complete_df.parquet
+data/complete_df.csv
+data/complete_df.xlsx
+data/complete_df.sqlite
